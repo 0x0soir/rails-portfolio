@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title Jorge Parrilla | Software Developer
+    %link{:href => asset_path('favicon.jpg'), :rel => "shortcut icon", :type => "image/jpg"}/
+    = stylesheet_link_tag 'index', media: 'all', 'data-turbolinks-track' => false
+    = javascript_include_tag 'customindex'
+    = csrf_meta_tags
+  %body.index{"js-controller" => "container"}
+    = yield

@@ -1,0 +1,120 @@
+/ WRAPPER
+.wrapper
+  / HOME
+  %section.module.module-header.bg-dark.bg-dark-50{"data-background"=>asset_path('backgrounds/bg.jpg')}
+    .container
+      / MODULE TITLE
+      .row
+        .col-sm-6.col-sm-offset-3
+          %h1.module-title.font-alt.align-center Bienvenido
+          .module-subtitle.font-inc.align-center
+            Aquí podrás encontrar información sobre mis trabajos, certificaciones académicas, experiencia y algún que otro proyecto de mi tiempo libre.
+      / /MODULE TITLE
+  / /HOME
+  / ABOUT
+  %section.module
+    .container
+      .row
+        / ABOUT CONTENT
+        .col-sm-6
+          %h2.module-title.font-alt Sobre mi
+          .module-subtitle.font-inc
+            I'm a software developer based in Madrid, Spain. I make web applications, usually with
+            = succeed "," do
+              %a{:href => "http://php.net/"} PHP
+            %a{:href => "https://www.djangoproject.com/"} Django
+            and
+            %a{:href => "http://www.rubyonrails.org.es/"} Ruby on Rails
+            (like this Portfolio). I'm available also for hire on a freelance basis.
+            %hr/
+            Soy desarrollador de Software viviendo en Madrid, España. Realizo aplicaciones generalmente utilizando PHP, Django y Ruby on Rails (como este Portfolio). Estoy disponible también para trabajos freelance.
+          %ul.social-list.text-center
+            %li
+              %a{:href => "https://github.com/iSoir", target:"_blank"}
+                %img{class: "logo-github", src:asset_path('about/icons/github-logo.png'), alt:"GitHub"}
+            %li
+            %li
+              %a{:href => "https://es.linkedin.com/in/jparrilla", target:"_blank"}
+                %img{class: "logo-linkedin", src:asset_path('about/icons/linkedin-logo.png'), alt:"Linkedin"}
+            %li
+        / /ABOUT CONTENT
+        / SKILLS
+        .col-sm-6
+          %h5.progress-title.font-inc PHP
+          .progress
+            .progress-bar.pb-dark{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "90", :role => "progressbar"}
+              %span.font-inc
+          %h5.progress-title.font-inc MySQL
+          .progress
+            .progress-bar.pb-dark{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "80", :role => "progressbar"}
+              %span.font-inc
+          %h5.progress-title.font-inc Linux (Debian)
+          .progress
+            .progress-bar.pb-dark{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "75", :role => "progressbar"}
+              %span.font-inc
+          %h5.progress-title.font-inc Ruby on Rails (RoR)
+          .progress
+            .progress-bar.pb-dark{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "70", :role => "progressbar"}
+              %span.font-inc
+          %h5.progress-title.font-inc C
+          .progress
+            .progress-bar.pb-dark{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "60", :role => "progressbar"}
+              %span.font-inc
+          %h5.progress-title.font-inc C#
+          .progress
+            .progress-bar.pb-dark{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "50", :role => "progressbar"}
+              %span.font-inc
+
+        / /SKILLS
+  / /ABOUT
+  / DIVIDER
+  %hr.divider-w/
+  / /DIVIDER
+  / DIVIDER
+  %hr.divider-w/
+  / /DIVIDER
+  / CONTACT
+  %section.module-small
+    .container
+      .row
+        / CONTENT BOX
+        .col-sm-4
+          .content-box
+            .content-box-icon
+              %span.icon-map-pin
+            .content-box-title.font-inc
+              Madrid, España
+        / /CONTENT BOX
+        / CONTENT BOX
+        .col-sm-4
+          .content-box
+            .content-box-icon
+              %span.icon-phone
+            .content-box-title.font-inc
+              [Envíame un Mail]
+        / /CONTENT BOX
+        / CONTENT BOX
+        .col-sm-4
+          .content-box
+            .content-box-icon
+              %span.icon-envelope
+            .content-box-title.font-inc
+              me@me.com
+        / /CONTENT BOX
+  / /CONTACT
+  / FOOTER
+  %footer.footer
+    .container
+      .row
+        .col-sm-12.text-center
+          %p.copyright.font-inc.m-b-0
+            © 2016
+            = succeed "," do
+              %a{:href => "/index"} JORGE PL
+  / /FOOTER
+/ /WRAPPER
+/ Scroll-up
+.scroll-up
+  %a{:href => "#totop"}
+    %i.fa.fa-angle-double-up
+/ Javascript files

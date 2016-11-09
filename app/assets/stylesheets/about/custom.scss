@@ -1,0 +1,56 @@
+/* ------------------------------------------------------------------
+JORGE PARRILLA
+------------------------------------------------------------------ */
+
+/* GENERAL */
+
+.navbar-brand-mini{
+	font-size: 12px !important;
+}
+
+.module-header-mini{
+	padding: 0 0 80px !important;
+}
+
+.module-small{
+	padding: 50px 0 !important;
+}
+.post-entry{
+	min-height: 70px;
+}
+
+.article-image{
+	height: 96px;
+	background-size: cover;
+  background-position: center center;
+}
+
+.pagination{
+	display:table;
+  margin:0 auto;
+}
+
+.module-first-small{
+	padding: 0 !important;
+}
+
+.lowercase{
+	text-transform: lowercase;
+}
+.lowercase:first-letter {
+	text-transform: uppercase !important;
+}
+
+.logo-github{
+	width: 50px;
+	height: 50px;
+}
+
+.logo-linkedin{
+	width: 50px;
+	height: 50px;
+}
+
+.text-center{
+	text-align: center;
+}

@@ -1,0 +1,34 @@
+%aside.menu{"js-controller" => "menu"}
+  .menu__pane.menu__pane--nav
+    %nav.menu__nav.nav
+      %ul.nav__list.nav__list--primary
+        %li.nav__list__item{"js-menu-item" => ""}
+          %a.nav__list__link.nav__list__link--active{:href => "/", :title => "Volver a inicio"}
+            Home
+        %li.nav__list__item{"js-menu-item" => ""}
+          %a.nav__list__link{:href => "/about", :title => "Sobre mi"}
+            Sobre mi
+      %ul.nav__list.nav__list--secondary
+        %li.nav__list__item{"js-menu-item" => ""}
+          %a.nav__list__link{:href => "/contacto"} Contacto
+        %li.nav__list__item{"js-menu-item" => ""}
+          %a.nav__list__link{:href => "https://twitter.com/_jorgepl/", :rel => "nofollow", :target => "blank"} Twitter
+        %hr.nav__list__divider/
+        %li.nav__list__item{"js-menu-item" => ""}
+          %a.nav__list__link{:href => "https://github.com/isoir", :rel => "nofollow", :target => "blank"} GitHub
+.page
+  %header#header.header{"js-controller" => "header"}
+    .header__menutrigger
+      .header__menutrigger__image{"js-menu-trigger" => ""}
+        %img.header__menutrigger__img.header__menutrigger__img--open{:alt => "Open Menu", :height => "20", :src => "/assets/index/hamburger.svg"}/
+        %img.header__menutrigger__img.header__menutrigger__img--close{:alt => "Close Menu", :height => "20", :src => "/assets/index/close.svg"}/
+  .vcard
+    .vcard__portrait{:title => "Brum!"}
+      %img{:alt => "Jorge Parrilla - Software Developer", :src => asset_path("index/jorge-foto.png")}/
+    .vcard__details
+      %h1.vcard__name Jorge Parrilla
+      %h2.vcard__title Software Developer
+      %h3.vcard__twitter
+        %a{:href => "https://twitter.com/_jorgepl", :rel => "nofollow", :target => "_blank"} @_jorgepl
+      %h3.vcard__email
+        %a{:href => "mailto:isoir.2@gmail.com"} me@me.com

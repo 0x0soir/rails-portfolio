@@ -1,0 +1,88 @@
+/ WRAPPER
+.wrapper
+  / HOME
+  %section.module-header.module-header-mini.bg-dark
+  / /HOME
+  / PORTFOLIO
+  %section.module-small.p-t-20
+    .container
+      / PORTFOLIO FILTER
+      .row
+        .col-sm-12
+          %ul#filters.filter.font-inc.hidden-xs
+            %li
+              %a.current.wow.fadeInUp{"data-filter" => "*", :href => "#"} Todas
+            %li
+              %a.wow.fadeInUp{"data-filter" => ".php", "data-wow-delay" => "0.2s", :href => "#"} PHP
+            %li
+              %a.wow.fadeInUp{"data-filter" => ".ruby", "data-wow-delay" => "0.4s", :href => "#"} Ruby on Rails
+            %li
+              %a.wow.fadeInUp{"data-filter" => ".linux", "data-wow-delay" => "0.6s", :href => "#"} Linux
+      / /PORTFOLIO FILTER
+      %hr.divider-w
+      %br
+      / PORTFOLIO LIST
+      %ul#works-grid.works-grid.works-grid-2.works-hover-w
+        - @projects_db.each do |project_db|
+          / PORTFOLIO ITEM
+          %li{:class => "work-item #{project_db.lenguaje} webdesign"}
+            %a{:href => "#{project_db.url}"}
+              .work-image
+                %img{:alt => "", :src => asset_path("assets/proyectos/#{project_db.imagen}")}/
+              .work-caption
+                %h3.work-title.font-alt= project_db.titulo
+                .work-descr.font-inc
+                  = project_db.descripcion
+                  %hr.divider-w/
+                  %br
+          / /PORTFOLIO ITEM
+      / /PORTFOLIO LIST
+  / /PORTFOLIO
+  / DIVIDER
+  %hr.divider-w/
+  / /DIVIDER
+  / CONTACT
+  %section.module-small
+    .container
+      .row
+        / CONTENT BOX
+        .col-sm-4
+          .content-box
+            .content-box-icon
+              %span.icon-map-pin
+            .content-box-title.font-inc
+              Madrid, España
+        / /CONTENT BOX
+        / CONTENT BOX
+        .col-sm-4
+          .content-box
+            .content-box-icon
+              %span.icon-phone
+            .content-box-title.font-inc
+              [Envíame un Mail]
+        / /CONTENT BOX
+        / CONTENT BOX
+        .col-sm-4
+          .content-box
+            .content-box-icon
+              %span.icon-envelope
+            .content-box-title.font-inc
+              me@me.com
+        / /CONTENT BOX
+  / /CONTACT
+  / FOOTER
+  %footer.footer
+    .container
+      .row
+        .col-sm-12.text-center
+          %p.copyright.font-inc.m-b-0
+            © 2016
+            = succeed "," do
+              %a{:href => "/index"} JORGE PL
+  / /FOOTER
+/ /WRAPPER
+/ Scroll-up
+.scroll-up
+  %a{:href => "#totop"}
+    %i.fa.fa-angle-double-up
+/ Javascript files
