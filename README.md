@@ -1,7 +1,5 @@
 # Portfolio
 
-[![Gem Version](https://badge.fury.io/rb/haml.svg)](http://rubygems.org/gems/rails)
-
 Portfolio creado utilizando tecnología Ruby on Rails (RoR) empleando
 un template basado en Haml con JavaScript (que convertiré a CoffeeScript).
 Se utilizan varias herramientas externas para el uso del scroll, barras de
