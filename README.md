@@ -1,3 +1,4 @@
+<img src="https://developer.fedoraproject.org/static/logo/ruby.png" alt="Logo" width="70px">
 # Portfolio
 
 Portfolio creado utilizando tecnología Ruby on Rails (RoR) empleando
@@ -19,3 +20,6 @@ progreso y efectos.
 * gem 'haml-rails', '~> 0.9'
 * gem 'byebug'
 * gem 'web-console', '~> 2.0'
+
+### DEMO => http://www.jorgepl.com
+<img src="http://i.imgur.com/zE1soG0.png" alt="Demo">
