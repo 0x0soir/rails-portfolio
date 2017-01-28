@@ -30,7 +30,7 @@
             Soy desarrollador de Software viviendo en Madrid, España. Realizo aplicaciones generalmente utilizando PHP, Django y Ruby on Rails (como este Portfolio). Estoy disponible también para trabajos freelance.
           %ul.social-list.text-center
             %li
-              %a{:href => "https://github.com/iSoir", target:"_blank"}
+              %a{:href => "https://github.com/0x0soir", target:"_blank"}
                 %img{class: "logo-github", src:asset_path('about/icons/github-logo.png'), alt:"GitHub"}
             %li
             %li
@@ -40,6 +40,14 @@
         / /ABOUT CONTENT
         / SKILLS
         .col-sm-6
+          %h5.progress-title.font-inc [NOW] Ruby on Rails (RoR)
+          .progress
+            .progress-bar.pb-dark{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "80", :role => "progressbar"}
+              %span.font-inc
+          %h5.progress-title.font-inc [NOW] React
+          .progress
+            .progress-bar.pb-dark{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "80", :role => "progressbar"}
+              %span.font-inc
           %h5.progress-title.font-inc PHP
           .progress
             .progress-bar.pb-dark{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "90", :role => "progressbar"}
@@ -51,10 +59,6 @@
           %h5.progress-title.font-inc Linux (Debian)
           .progress
             .progress-bar.pb-dark{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "75", :role => "progressbar"}
-              %span.font-inc
-          %h5.progress-title.font-inc Ruby on Rails (RoR)
-          .progress
-            .progress-bar.pb-dark{"aria-valuemax" => "100", "aria-valuemin" => "0", "aria-valuenow" => "70", :role => "progressbar"}
               %span.font-inc
           %h5.progress-title.font-inc C
           .progress
@@ -89,14 +93,6 @@
         .col-sm-4
           .content-box
             .content-box-icon
-              %span.icon-phone
-            .content-box-title.font-inc
-              [Envíame un Mail]
-        / /CONTENT BOX
-        / CONTENT BOX
-        .col-sm-4
-          .content-box
-            .content-box-icon
               %span.icon-envelope
             .content-box-title.font-inc
               info@jorgepl.com
@@ -108,9 +104,8 @@
       .row
         .col-sm-12.text-center
           %p.copyright.font-inc.m-b-0
-            © 2016
-            = succeed "," do
-              %a{:href => "/index"} JORGE PL
+            © 2017
+            %a{:href => "/index"} JORGE PL
   / /FOOTER
 / /WRAPPER
 / Scroll-up
