@@ -1,6 +1,7 @@
 class PortfolioController < ApplicationController
   layout 'about'
   def about
+    @projects_db = Proyecto.all
     render 'about'
   end
   def projects

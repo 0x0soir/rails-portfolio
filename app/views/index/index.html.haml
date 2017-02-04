@@ -25,13 +25,19 @@
       .header__menutrigger__image{"js-menu-trigger" => ""}
         %img.header__menutrigger__img.header__menutrigger__img--open{:alt => "Abrir menu", :height => "20", :src => asset_path("index/hamburger.svg")}/
         %img.header__menutrigger__img.header__menutrigger__img--close{:alt => "Cerrar menu", :height => "20", :src => asset_path("index/close.svg")}/
+    %div{:style=>"position: relative; height: 600px; padding: 8rem 4rem; display: flex; -webkit-flex-flow: column; -ms-flex-flow: column;flex-flow: column;-webkit-align-items: center; -ms-flex-align: center; align-items: center; padding: 4rem 2rem;"}
+      %canvas#header-canvas{:style=> "position: absolute;"}
+
   .vcard
-    .vcard__portrait{:title => "Brum!"}
-      %img{:alt => "Jorge Parrilla - Software Developer", :src => asset_path("index/jorge-foto.png")}/
-    .vcard__details
-      %h1.vcard__name Jorge Parrilla
-      %h2.vcard__title Software Developer
-      %h3.vcard__email
-        %a{:href => "mailto:isoir.2@gmail.com"} info@jorgepl.com
-      %h3.vcard__about
-        %a{:href => "/about"} >> Sobre mi
+    %div{:style=>"display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center;"}
+      .vcard__portrait{:title => "Brum!"}
+        %img{:alt => "Jorge Parrilla - Software Developer", :src => asset_path("index/jorge-foto.png")}/
+      .vcard__details
+        %h1.vcard__name Jorge Parrilla
+        %h2.vcard__title Software Developer
+        %h3.vcard__email
+          %a{:href => "mailto:isoir.2@gmail.com"} info@jorgepl.com
+        %h3.vcard__about
+          %a{:href => "/about"} >> Sobre mi
+
+%script{:src => "/assets/index/all.min.js", :type => "text/javascript"}
