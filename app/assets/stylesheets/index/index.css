@@ -27,7 +27,9 @@ html {
  * Remove default margin.
  */
 body {
-  margin: 0; }
+  margin: 0;
+  background: #222;
+}
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -463,7 +465,7 @@ a, .link {
   transition: color 0.15s linear;
   opacity: 1;
   text-decoration: none;
-  color: #25ae69;
+  color: #06fb80;
   cursor: pointer; }
 
 a:hover, .link:hover {
@@ -1367,7 +1369,10 @@ body.loaded .vcard {
 .vcard__name {
   font-size: 3rem;
   line-height: 3rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  font-family: 'Suez One', serif;
+  color: #fff;
+}
 
 .vcard__title,
 .vcard__twitter,
@@ -1380,7 +1385,11 @@ body.loaded .vcard {
 
 .vcard__title {
   margin-top: 0;
-  color: #878787; }
+  color: #878787;
+  font-family: 'Suez One', serif;
+  font-style: italic;
+  color: #2ff;
+}
 
 @media (max-width: 1100px) {
   .vcard {
